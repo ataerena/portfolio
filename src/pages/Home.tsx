@@ -1,11 +1,13 @@
 import React from 'react';
 
+import RouteItem from '../components/RouteItem';
+
 import "../App.scss";
 import "../styles/Home.scss";
 
 const Home: React.FC = () => {
     return (
-      <div className="Home">
+      <div className="MainFrame">
         <div className="greetings">
           <h1>
             Hello! 
@@ -31,6 +33,21 @@ const Home: React.FC = () => {
             This page is simply a hub that I can use to display my work in programming. 
             From here, you will be able to view all of my relevant experience in programming and my professional journey.
           </span>
+        </div>
+
+        <div className="navigation-segment">
+          <div>
+            <h2>
+              Quick Navigation
+            </h2>
+          </div>
+
+          <div className="quick-navigation">
+            <RouteItem name="Education" to="/education" />
+            <RouteItem name="Work Experience" to="/work-experience" />
+            <RouteItem name="Projects" to="/projects" />
+            {/* <RouteItem name="Work Experience" to="/work-experience" /> */}
+          </div>
         </div>
       </div>
     );

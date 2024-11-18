@@ -1,6 +1,6 @@
 @import "../App.scss";
 
-.Home {
+.MainFrame {
     padding-left: 1em;
     padding-right: 1em;
 
@@ -16,12 +16,25 @@
     border-left: thin solid $text-color;
 
     box-shadow: 0 0 .33em .1em $text-color;
+
+    > * {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+
+    > h1 {
+        border-bottom: thin solid $text-color;
+        padding-bottom: .25em !important;
+    }
+
+    overflow-y: auto;
 }
 
 .greetings {
     padding-top: .5em;
     width: 100%;
     text-align: center;
+    border-top: 0 !important;
     
     > h1, h2 {
         line-height: 0;
@@ -32,6 +45,52 @@
     }
 }
 
-.who-i-am {
-    width: 90%;
+
+.navigation-segment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.quick-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.route-item {
+    width: 40%;
+    height: fit-content;
+    padding: 2em;
+    border-radius: 1.5em;
+    border: thin solid $text-color;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    > a {
+        text-decoration: none;
+        color: $text-color;
+        transition: all $default-transition-time;
+
+        > svg {
+            transform: translateY(0) !important;
+        }
+    }
+
+    transition: all $default-transition-time;
+    cursor: pointer;
+    &:hover {
+        background-color: $bg-hover;
+
+        > a {
+            color: $text-hover;
+        }
+    }
 }

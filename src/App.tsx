@@ -8,6 +8,8 @@ import TopNavbar from './components/TopNavbar';
 
 // pages //
 import Home from "./pages/Home";
+import Education from "./pages/Education";
+import Experience from "./pages/Experience";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +18,8 @@ const App: React.FC = () => {
         <TopNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/work-experience" element={<Experience />} />
         </Routes>
       </Router>
     </div>
