@@ -5,7 +5,7 @@ import { useLanguage } from '../language/LanguageProvider';
 import { useTranslate } from '../language/LanguageProvider';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import "../App.scss";
@@ -46,6 +46,10 @@ const TopNavbar: React.FC = () => {
             </div>
             <div className="navbar-item navbar-link">
                 {t('navbar.download_cv')}
+            </div>
+            <div className="navbar-item navbar-link">
+                <FontAwesomeIcon icon={faLanguage} />
+                {t('navbar.language')}
             </div>
         </div>
       </div>

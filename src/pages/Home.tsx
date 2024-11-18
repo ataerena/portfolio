@@ -28,7 +28,8 @@ const Home: React.FC = () => {
             What is this page
           </h3>
           <span>
-            This page is simply a hub that I can use to display my work in programming. From here, you will be able to view all of my relevant experience in programming and my professional journey.
+            This page is simply a hub that I can use to display my work in programming. 
+            From here, you will be able to view all of my relevant experience in programming and my professional journey.
           </span>
         </div>
       </div>
