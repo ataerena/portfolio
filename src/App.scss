@@ -1,0 +1,41 @@
+// colors //
+$bg-color: #120c09;
+$text-color: #ffce6b;
+$text-hover: #feebc6;
+
+// interaction //
+$default-transition-time: 150ms;
+
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  overflow: auto;
+  
+  color: $text-color;
+  background-color: $bg-color;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg {
+  transform: translateY(12.5%);
+  padding: 0 .1em 0 .1em;
+}
+
+.--row-flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.--row-flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.--row-flex-center {
+  display: flex;
+  justify-content: center;
+}
