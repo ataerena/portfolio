@@ -19,28 +19,18 @@ const TopNavbar: React.FC = () => {
       <div className="TopNavbar">
         <div className="navbar-group --row-flex-start">
             <div className="navbar-item">
-                <Link to="/" className="navbar-link">
+                <a href="/" className="navbar-link">
                     <FontAwesomeIcon icon={faHouse} />
                     {t('navbar.home')}
-                </Link>
+                </a>
             </div>
         </div>
 
         <div className="navbar-group --row-flex-center">            
-            --page name--
+            Portfolio
         </div>
 
         <div className="navbar-group --row-flex-end">
-            <div className="navbar-item">
-                <a className="navbar-link" href="https://github.com/ataerena" target="_blank">
-                    <FontAwesomeIcon icon={faGithub} />
-                </a>
-            </div>
-            <div className="navbar-item">
-                <a className="navbar-link" href="https://www.linkedin.com/in/ata-eren-arslan-401504270/" target="_blank">
-                    <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-            </div>
             <div className="navbar-item navbar-link">
                 {t('navbar.download_cv')}
             </div>

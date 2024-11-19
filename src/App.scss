@@ -18,14 +18,25 @@ $default-transition-time: 150ms;
   width: 100vw;
   height: 100vh;
 
-  overflow: auto;
+  overflow: hidden;
   
   color: $text-color;
   background-color: $bg-color;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+}
+
+.LayoutEntryPoint {
+  width: 75% !important;
+  max-width: 75% !important;
+  height: 92.5%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 svg {

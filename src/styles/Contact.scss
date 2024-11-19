@@ -1,0 +1,33 @@
+@import "../App.scss";
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    width: 33%;
+    max-width: 33% !important;
+    height: fit-content;
+
+    padding-right: 1em;
+
+    > .contact-item {
+        padding-bottom: 1em;
+
+        > svg {
+            padding-left: .5em;
+        }
+    }
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+
+    transition: all $default-transition-time;
+    &:hover {
+        color: $text-hover;
+        text-decoration: underline;
+    }
+}

@@ -4,7 +4,8 @@
     padding-left: 1em;
     padding-right: 1em;
 
-    width: 50%;
+    width: 66.66%;
+    max-width: 66.66% !important;
     height: 100%;
 
     display: flex;
@@ -121,6 +122,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
+    &:last-of-type {
+        border-bottom: 0 !important;
+    }
 
     > .top-section {
         display: flex;
