@@ -27,7 +27,7 @@ const Home: React.FC = () => {
           </span>
 
           <h3>
-            What is this page
+            What this page is
           </h3>
           <span>
             This page is simply a hub that I can use to display my work in programming. 

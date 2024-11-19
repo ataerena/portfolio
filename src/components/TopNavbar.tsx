@@ -24,9 +24,6 @@ const TopNavbar: React.FC = () => {
                     {t('navbar.home')}
                 </Link>
             </div>
-            <div className="navbar-item">
-                {t('navbar.projects')}
-            </div>
         </div>
 
         <div className="navbar-group --row-flex-center">            

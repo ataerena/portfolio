@@ -48,6 +48,15 @@ svg {
   justify-content: center;
 }
 
+.no-margin-span {
+  margin: .5em 0;
+  padding: 0 !important;
+}
+
+.border-bottom {
+  padding-bottom: 1em !important;
+  border-bottom: thin solid $text-color;
+}
 
 // scrollbar //
 ::-webkit-scrollbar {

@@ -10,6 +10,8 @@ import TopNavbar from './components/TopNavbar';
 import Home from "./pages/Home";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
+import SamuraiGame from './pages/SamuraiGame';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +22,8 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/education" element={<Education />} />
           <Route path="/work-experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/samurai-game" element={<SamuraiGame />} />
         </Routes>
       </Router>
     </div>

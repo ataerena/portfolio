@@ -8,7 +8,7 @@ interface IMilestoneItem {
     text: string;
 }
 
-const MileStoneItem: React.FC<IMilestoneItem> = ({header,subheader, subheader2, text}) => {
+const MileStoneItem: React.FC<IMilestoneItem> = ({header, subheader, subheader2, text}) => {
     return (
         <div className="milestone-item">
             <h3>
