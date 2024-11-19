@@ -44,14 +44,14 @@ const Experience: React.FC = () => {
       <div className="navigation-segment">
           <div>
             <h2>
-              Quick Navigation
+              Read Next
             </h2>
           </div>
 
           <div className="quick-navigation">
-            <RouteItem name="Home" to="/" />
-            <RouteItem name="Education" to="/education" />
             <RouteItem name="Projects" to="/projects" />
+            <RouteItem name="Education" to="/education" />
+            <RouteItem name="Home" to="/" />
             {/* <RouteItem name="Work Experience" to="/work-experience" /> */}
           </div>
         </div>

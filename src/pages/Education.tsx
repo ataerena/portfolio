@@ -42,9 +42,9 @@ const Education: React.FC = () => {
             </div>
 
             <div className="quick-navigation">
-              <RouteItem name="Home" to="/" />
               <RouteItem name="Work Experience" to="/work-experience" />
               <RouteItem name="Projects" to="/projects" />
+              <RouteItem name="Home" to="/" />
               {/* <RouteItem name="Work Experience" to="/work-experience" /> */}
             </div>
           </div>

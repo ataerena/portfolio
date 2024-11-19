@@ -6,7 +6,8 @@ const languages = {
             "home": "Homepage",
             "projects": "Projects",
             "download_cv": "Download Resume",
-            "language": "Language"
+            "language": "Language",
+            "portfolio": "Portfolio"
         }
     },
     "tr": {
@@ -14,7 +15,8 @@ const languages = {
             "home": "Anasayfa",
             "projects": "Projeler",
             "download_cv": "Özgeçmişi İndir",
-            "language": "Dil"
+            "language": "Dil",
+            "portfolio": "Portfolyo"
         }
     }
 };
