@@ -89,6 +89,7 @@
     cursor: pointer;
     &:hover {
         background-color: $bg-hover;
+        box-shadow: 0 0 2em 1em $bg-color inset;
 
         > a {
             color: $text-hover;
