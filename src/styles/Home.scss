@@ -80,6 +80,7 @@
         transition: all $default-transition-time;
 
         > svg {
+            padding-left: .5em;
             transform: translateY(0) !important;
         }
     }
@@ -91,6 +92,25 @@
 
         > a {
             color: $text-hover;
+        }
+    }
+}
+
+.milestone-item {
+    margin-bottom: 2em;
+    > h3 {
+        margin: 0;
+    }
+    > h4 {
+        margin-top: .5em;
+        color: $text-alternate;
+
+        align-items: center;
+
+        > h5 {
+            margin: 0;
+            padding-left: .5em;
+            color: $text-greyed-out;
         }
     }
 }

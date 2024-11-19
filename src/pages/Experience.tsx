@@ -1,6 +1,7 @@
 import React from 'react';
 
 import MilestoneItem from '../components/MilestoneItem';
+import RouteItem from '../components/RouteItem';
 
 import "../App.scss";
 import "../styles/Home.scss";
@@ -14,6 +15,8 @@ const Experience: React.FC = () => {
 
       <MilestoneItem
         header="InnoEM Consultancy Network"
+        subheader="Software Developer - Full Time"
+        subheader2="October 2023 - Present"
         text="
           I joined InnoEM as an intern at the start of 2023 October. 
           Right after I joined, one of the staff members left and I was left as the sole frontend developer in the Sustainfinity project.
@@ -27,6 +30,8 @@ const Experience: React.FC = () => {
 
       <MilestoneItem
         header="Ulak Haberleşme"
+        subheader="Software Developer - Intern"
+        subheader2="July 2023 - October 2023"
         text="
           I've completed my internship of 72 work days at Ulak Haberleşme between July 2023 - October 2023.
           There, I worked on a side project that focused on creating a web based documentation application that needed to parse complex data into web pages.
@@ -35,6 +40,21 @@ const Experience: React.FC = () => {
           At the end of my 72 days of internship, the project was near completed with only some polishing required.
         "
       />
+
+      <div className="navigation-segment">
+          <div>
+            <h2>
+              Quick Navigation
+            </h2>
+          </div>
+
+          <div className="quick-navigation">
+            <RouteItem name="Home" to="/" />
+            <RouteItem name="Education" to="/education" />
+            <RouteItem name="Projects" to="/projects" />
+            {/* <RouteItem name="Work Experience" to="/work-experience" /> */}
+          </div>
+        </div>
     </div>
   );
 }
