@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import { useLanguage } from '../language/LanguageProvider';
 import { useTranslate } from '../language/LanguageProvider';
@@ -7,10 +6,10 @@ import { LanguageType } from "../language/LanguageProvider";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faLanguage } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import "../App.scss";
 import "../styles/TopNavbar.scss";
+import { escape } from 'querystring';
 
 interface ILanguages {
     text: string;
@@ -32,8 +31,23 @@ const TopNavbar: React.FC = () => {
         setLanguage(foundLanguage || "en");
     }
 
+    const [cvActive, setCvActive] = useState(false);
+    const handleClickCv = () => {
+        setCvActive(!cvActive);
+    }
+    const handleBlurCv = () => {
+        setTimeout(() => {
+            setCvActive(false);
+        }, 100);
+    }
+    const handleTapEsc = (e: React.KeyboardEvent<HTMLDivElement>) => {
+        if (e.key === "Escape") {
+            setCvActive(false);
+        }
+    }
+
     return (
-      <div className="TopNavbar">
+      <div className="TopNavbar" onKeyUp={(event) => handleTapEsc(event)}>
         <div className="navbar-group --row-flex-start">
             <div className="navbar-item">
                 <a href="/" className="navbar-link">
@@ -48,12 +62,26 @@ const TopNavbar: React.FC = () => {
         </div>
 
         <div className="navbar-group --row-flex-end">
-            <div className="navbar-item navbar-link">
-                {t('navbar.download_cv')}
+            <div className="navbar-item navbar-link navbar-link--no-hover" onBlur={handleBlurCv} tabIndex={0}>
+                <span onClick={handleClickCv}>
+                    {t('navbar.download_cv')}
+                </span>
+
+                {
+                    cvActive ?
+                    <div className="cv-buttons">
+                        <a href="/files/Ata_TR.pdf" download="Ozgecmis_AtaErenArslan.pdf" tabIndex={0}>
+                            Türkçe
+                        </a>
+                        <a href="/files/Ata_EN.pdf" download="Resume_AtaErenArslan.pdf" tabIndex={0}>
+                            English
+                        </a>
+                    </div>
+                    : null
+                }
             </div>
-            <div className="navbar-item navbar-link">
-                
-                <FontAwesomeIcon icon={faLanguage} />
+            <div className="navbar-item navbar-link navbar-link--no-hover">
+                <FontAwesomeIcon icon={faLanguage} style={{cursor: "default"}}/>
                 {
                     <select value={language} id="language-select" onChange={handleChangeLanguage}>
                         {
