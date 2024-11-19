@@ -81,7 +81,7 @@ const TopNavbar: React.FC = () => {
                 }
             </div>
             <div className="navbar-item navbar-link navbar-link--no-hover">
-                <FontAwesomeIcon icon={faLanguage} style={{cursor: "default"}}/>
+                <FontAwesomeIcon icon={faLanguage} style={{cursor: "default", transform: "translateY(15%)"}}/>
                 {
                     <select value={language} id="language-select" onChange={handleChangeLanguage}>
                         {

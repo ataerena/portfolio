@@ -107,10 +107,12 @@
     > a {
         background-color: $scrollbar-thumb-color;
         text-decoration: none;
-        color: $text-color;
+        color: $scrollbar-bg-color;
+        font-size: .8em;
+        font-weight: bold;
 
         box-shadow: 0 .1em 1em .1em $bg-hover;
-        padding: .3em .5em;
+        padding: .3em 1em;
         border-radius: .5em;
         border: 0 !important;
         margin: .5em;
@@ -119,6 +121,7 @@
         transition: all $default-transition-time;
         &:hover {
             background-color: $scrollbar-thumb-color-hover;
+            color: $bg-color;
         }
     }
 }
