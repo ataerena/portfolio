@@ -151,7 +151,7 @@ const languages = {
             "header": "Eğitim",
             "education_1": {
                 "header": "Beşiktaş Atatürk Anadolu Lisesi - Lise",
-                "text": "2015-2019 arası BAAL'da okudum. bAAL'da, burada bahsetmeye değer bir şey yapmadım."
+                "text": "2015-2019 arası BAAL'da okudum. BAAL'da, burada bahsetmeye değer bir şey yapmadım."
             },
             "education_2": {
                 "header": "Marmara Universitesi, Mekatronik Mühendisliği, Lisans",

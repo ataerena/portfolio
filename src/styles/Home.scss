@@ -172,6 +172,19 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .MainFrame {
+        min-width: 95% !important;
+        max-width: 95% !important;
+        padding: 1em;
+    }
+
+    .route-item {
+        padding: 2em;
+        font-size: 2vw;
+    }
+}
+
 @keyframes FadeIn {
     0% {
         opacity: 0;

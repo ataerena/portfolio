@@ -1,5 +1,6 @@
 // colors //
 $bg-color: #120c09;
+$bg-menu: #1b120d;
 $bg-hover: #2d231f;
 
 $text-color: #ffce6b;
@@ -87,10 +88,17 @@ svg {
   }
 }
 
-
 @supports (-moz-appearance: none) {
   html {
     scrollbar-width: thin;
     scrollbar-color: $scrollbar-thumb-color $scrollbar-bg-color;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .LayoutEntryPoint {
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: center;
   }
 }

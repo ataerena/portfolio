@@ -1,0 +1,96 @@
+@import "../App.scss";
+
+.MobileNavbar {
+    z-index: 99;
+
+    background-color: $bg-color;
+    height: 7.5%;
+    min-height: 7.5% !important;
+    width: 100%;
+    border-bottom: thin solid $text-color;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-item {
+    padding: 1em;
+
+    transition: all $default-transition-time;
+    cursor: pointer;
+    &:hover {
+        color: $text-hover;
+    }
+}
+
+.app-menu {
+    overflow: hidden;
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: $bg-menu;
+    width: 80vw;
+    height: calc(100vh - 1em);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: whitesmoke;
+
+    box-shadow: 0 0 1em .1em $bg-hover;
+
+    animation: FadeIn 100ms ease-in 1;
+
+    > .collapse-btn {
+        transition: all $default-transition-time;
+        cursor: pointer;
+
+        &:hover {
+            color: $text-hover;
+        }
+    }
+}
+
+.menu-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 1em;
+
+    > h4 {
+        width: 95%;
+        margin: 1em 0 0 0 !important;
+        border-bottom: thin solid whitesmoke;
+    }
+
+    > .menu-item {
+        border: thin solid $text-hover;
+        padding: .25em 1em .25em 1em;
+        border-radius: .25em;
+        margin-top: .5em;
+        transition: all $default-transition-time;
+        cursor: pointer;
+    }
+
+    > .selected-language {
+        color: $bg-color;
+        background-color: $text-hover;
+        pointer-events: none !important;
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: .2;
+    } 100% {
+        opacity: .95;
+    }
+}

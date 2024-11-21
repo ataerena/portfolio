@@ -30,7 +30,7 @@ const TopNavbar: React.FC = () => {
         setLanguage(foundLanguage || "en");
     }
 
-    const [cvActive, setCvActive] = useState(false);
+    const [cvActive, setCvActive] = useState<boolean>(false);
     const handleClickCv = () => {
         setCvActive(!cvActive);
     }
