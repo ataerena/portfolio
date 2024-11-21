@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import { useLanguage } from '../language/LanguageProvider';
 import { useTranslate } from '../language/LanguageProvider';
-import { LanguageType } from "../language/LanguageProvider";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faHouse, faEnvelope } from '@fortawesome/free-solid-svg-icons';
