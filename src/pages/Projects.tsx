@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
             <ProjectItem
                 header={t("projects.project_3.header")}
                 img_path=""
-                documentation_link="/projects/samurai-game"
+                documentation_link="/portfolio/files/SamuraiGameDocumentation"
                 github_link="https://github.com/ataerena/2DSamuraiGame"
                 brief={t("projects.project_3.description")}
             />
