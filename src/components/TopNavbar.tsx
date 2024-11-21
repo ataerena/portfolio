@@ -49,7 +49,7 @@ const TopNavbar: React.FC = () => {
       <div className="TopNavbar" onKeyUp={(event) => handleTapEsc(event)}>
         <div className="navbar-group --row-flex-start">
             <div className="navbar-item">
-                <a href="/" className="navbar-link">
+                <a href="https://ataerena.github.io/portfolio/" className="navbar-link">
                     <FontAwesomeIcon icon={faHouse} />
                     {t('navbar.home')}
                 </a>
