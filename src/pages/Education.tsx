@@ -5,47 +5,42 @@ import RouteItem from '../components/RouteItem';
 
 import "../App.scss";
 import "../styles/Home.scss";
+import { useTranslate } from '../language/LanguageProvider';
 
 const Education: React.FC = () => {
+    const t = useTranslate();
+
     return (
         <div className="MainFrame">
           <h1>
-            Education
+            {t('education.header')}
           </h1>
 
           <MilestoneItem
-            header="Beşiktaş Atatürk Anadolu Lisesi - Highschool"
+            header={t('education.education_1.header')}
             subheader=""
             subheader2=""
-            text="
-                I went to BAAL from 2015 to 2019. I didn't do much that is worth mentioning here. We've won the school football tournament with my team, so I guess that's cool to mention.
-            "
+            text={t('education.education_1.text')}
           />
 
           <MilestoneItem
-            header="Marmara University, Mechatronics Engineering, Bachelor's"
+            header={t('education.education_2.header')}
             subheader=""
             subheader2=""
-            text="
-              I've graduated from the university with a GPA of 2.98 -not so great, I know- in January 2025. 
-              During my time in university, I started to have a further growing interest in the area of software rather than traditional mechatronics practices like automation or embedded systems.
-              So, I've spent a total of 144 business days of internship in my last year here and I've worked on web development during the entirety 
-              of these training periods in order to reach the end goal of becoming a software developer.
-            "
+            text={t('education.education_2.text')}
           />
 
           <div className="navigation-segment">
             <div>
               <h2>
-                Read Next
+                {t('navigation_menu.read_next')}
               </h2>
             </div>
 
             <div className="quick-navigation">
-              <RouteItem name="Work Experience" to="/work-experience" />
-              <RouteItem name="Projects" to="/projects" />
-              <RouteItem name="Home" to="/" />
-              {/* <RouteItem name="Work Experience" to="/work-experience" /> */}
+              <RouteItem name={t('navigation_menu.experience')} to="/work-experience" />
+              <RouteItem name={t('navigation_menu.projects')} to="/projects" />
+              <RouteItem name={t('navigation_menu.home')} to="/" />
             </div>
           </div>
         </div>

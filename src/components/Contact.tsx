@@ -4,12 +4,15 @@ import "../styles/Contact.scss";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiscord, faGithub, faInstagram, faLinkedin, faSpotify, faSteam } from '@fortawesome/free-brands-svg-icons';
+import { useTranslate } from '../language/LanguageProvider';
 
 const Contact: React.FC = () => {
+    const t = useTranslate();
+
     return (
       <div className="Contact">
         <h2 className="no-margin-span">
-            Contact & Socials
+            {t('contact.contact&socials')}
         </h2>
 
         <div className="contact-item --row-flex-start">

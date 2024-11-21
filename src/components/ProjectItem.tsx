@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useTranslate } from "../language/LanguageProvider";
 
 interface IProjectItem {
     header: string;
@@ -14,7 +15,8 @@ interface IProjectItem {
 }
 
 const ProjectItem: React.FC<IProjectItem> = ({header, img_path, brief, documentation_link, github_link}) => {
-    const img_alt_text = `${header} sample image`; //TODO: add language on 'sample image'
+    const t = useTranslate();
+    const img_alt_text = `${header} ${t('projects.misc.sample_img')}`;
 
     return (
         <div className="project-item border-bottom">
@@ -26,7 +28,7 @@ const ProjectItem: React.FC<IProjectItem> = ({header, img_path, brief, documenta
                     github_link !== "" ?
                     <Link to={github_link} target="_blank" className="--row-flex-start">
                         <FontAwesomeIcon icon={faGithub} style={{paddingRight: ".5em"}}/>
-                        View repository
+                        {t('projects.misc.repository')}
                     </Link>
                     : null
                 }
@@ -46,7 +48,7 @@ const ProjectItem: React.FC<IProjectItem> = ({header, img_path, brief, documenta
                 documentation_link !== "" ?
                 <a href="/files/SamuraiGameDocumentation.pdf" download="Samurai_Game_Documentation.pdf" className="--row-flex-start">
                     <FontAwesomeIcon icon={faFilePdf} />
-                    See an in depth documentation
+                    {t('projects.misc.documentation')}
                 </a>
                 : null
             }

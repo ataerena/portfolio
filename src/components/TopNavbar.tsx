@@ -9,7 +9,6 @@ import { faHouse, faLanguage } from '@fortawesome/free-solid-svg-icons';
 
 import "../App.scss";
 import "../styles/TopNavbar.scss";
-import { escape } from 'querystring';
 
 interface ILanguages {
     text: string;

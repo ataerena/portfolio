@@ -4,49 +4,49 @@ import RouteItem from '../components/RouteItem';
 
 import "../App.scss";
 import "../styles/Home.scss";
+import { useTranslate } from '../language/LanguageProvider';
 
 const Home: React.FC = () => {
+    const t = useTranslate();
+
     return (
       <div className="MainFrame">
         <div className="greetings">
           <h1>
-            Hello! 
+            {t('home.hello')}
           </h1>
           <h2>
-            My name is Ata and welcome to my portfolio!
+            {t('home.welcome')}
           </h2>
         </div>
 
         <div className="who-i-am">
           <h3>
-            Who I am
+            {t('home.who_i_am')}
           </h3>
           <span>
-            My full name is Ata Eren Arslan. I am a 23-year-old mechatronics engineering graduate from the University of Marmara.
-            I currently work as a fullstack web developer but programming is also amongst my few set of hobbies which include working out, football and video games.
+            {t('home.who_i_am_desc')}
           </span>
 
           <h3>
-            What this page is
+            {t('home.this_page_is')}
           </h3>
           <span>
-            This page is simply a hub that I can use to display my work in programming. 
-            From here, you will be able to view all of my relevant experience in programming and my professional journey.
+            {t('home.this_page_is_desc')}
           </span>
         </div>
 
         <div className="navigation-segment">
           <div>
             <h2>
-              Quick Navigation
+              {t('navigation_menu.quick_navigation')}
             </h2>
           </div>
 
           <div className="quick-navigation">
-            <RouteItem name="Education" to="/education" />
-            <RouteItem name="Work Experience" to="/work-experience" />
-            <RouteItem name="Projects" to="/projects" />
-            {/* <RouteItem name="Work Experience" to="/work-experience" /> */}
+            <RouteItem name={t('navigation_menu.education')} to="/education" />
+            <RouteItem name={t('navigation_menu.experience')} to="/work-experience" />
+            <RouteItem name={t('navigation_menu.projects')} to="/projects" />
           </div>
         </div>
       </div>

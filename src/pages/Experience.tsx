@@ -5,54 +5,42 @@ import RouteItem from '../components/RouteItem';
 
 import "../App.scss";
 import "../styles/Home.scss";
+import { useTranslate } from '../language/LanguageProvider';
 
 const Experience: React.FC = () => {
+    const t = useTranslate();
+
     return (
     <div className="MainFrame">
       <h1>
-        Experience
+        {t('experience.header')}
       </h1>
 
       <MilestoneItem
-        header="InnoEM Consultancy Network"
-        subheader="Software Developer - Full Time"
-        subheader2="October 2023 - Present"
-        text="
-          I joined InnoEM as an intern at the start of 2023 October. 
-          Right after I joined, one of the staff members left and I was left as the sole frontend developer in the Sustainfinity project.
-          So during my internship, I had a lot of oppornuties to grow my ability as a programmer and a frontend developer, especially using Vue.
-          At the end of my internship, with mutual content, I've joined the team as a full-time staff member.
-          After becoming a full-timer, I've started to slowly take on responsibilities on the backend development of the Sustainfinity project, which uses a stack of Node.js and PostgreSQL.
-          I've gained knowledge server management, Git and Jira.
-          As of writing this, I've been working at InnoEM for over a year now and I'm now comfortable working fullstack on a web application.
-        "
+        header={t('experience.experience_1.header')}
+        subheader={t('experience.experience_1.subheader')}
+        subheader2={t('experience.experience_1.subheader2')}
+        text={t('experience.experience_1.text')}
       />
 
       <MilestoneItem
-        header="Ulak Haberleşme"
-        subheader="Software Developer - Intern"
-        subheader2="July 2023 - October 2023"
-        text="
-          I've completed my internship of 72 work days at Ulak Haberleşme between July 2023 - October 2023.
-          There, I worked on a side project that focused on creating a web based documentation application that needed to parse complex data into web pages.
-          To achieve this, I used React for the interface and Python for parsing the data. 
-          I've helped create an excel syntax that would determine links between all the complex data that I shared with the rest of the staff.
-          At the end of my 72 days of internship, the project was near completed with only some polishing required.
-        "
+        header={t('experience.experience_2.header')}
+        subheader={t('experience.experience_2.subheader')}
+        subheader2={t('experience.experience_2.subheader2')}
+        text={t('experience.experience_2.text')}
       />
 
       <div className="navigation-segment">
           <div>
             <h2>
-              Read Next
+              {t('navigation_menu.read_next')}
             </h2>
           </div>
 
           <div className="quick-navigation">
-            <RouteItem name="Projects" to="/projects" />
-            <RouteItem name="Education" to="/education" />
-            <RouteItem name="Home" to="/" />
-            {/* <RouteItem name="Work Experience" to="/work-experience" /> */}
+            <RouteItem name={t('navigation_menu.projects')} to="/projects" />
+            <RouteItem name={t('navigation_menu.education')} to="/education" />
+            <RouteItem name={t('navigation_menu.home')} to="/" />
           </div>
         </div>
     </div>
