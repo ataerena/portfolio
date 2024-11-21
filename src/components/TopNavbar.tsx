@@ -69,10 +69,10 @@ const TopNavbar: React.FC = () => {
                 {
                     cvActive ?
                     <div className="cv-buttons">
-                        <a href="/files/Ata_TR.pdf" download="Ozgecmis_AtaErenArslan.pdf" tabIndex={0}>
+                        <a href="/portfolio/files/Ata_TR.pdf" download="Ozgecmis_AtaErenArslan.pdf" tabIndex={0}>
                             Türkçe
                         </a>
-                        <a href="/files/Ata_EN.pdf" download="Resume_AtaErenArslan.pdf" tabIndex={0}>
+                        <a href="/portfolio/files/Ata_EN.pdf" download="Resume_AtaErenArslan.pdf" tabIndex={0}>
                             English
                         </a>
                     </div>

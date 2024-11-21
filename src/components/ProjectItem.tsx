@@ -46,7 +46,7 @@ const ProjectItem: React.FC<IProjectItem> = ({header, img_path, brief, documenta
 
             {
                 documentation_link !== "" ?
-                <a href="/files/SamuraiGameDocumentation.pdf" download="Samurai_Game_Documentation.pdf" className="--row-flex-start">
+                <a href="/porfolio/files/SamuraiGameDocumentation.pdf" download="Samurai_Game_Documentation.pdf" className="--row-flex-start">
                     <FontAwesomeIcon icon={faFilePdf} />
                     {t('projects.misc.documentation')}
                 </a>
