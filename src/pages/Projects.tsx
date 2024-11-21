@@ -8,7 +8,6 @@ import "../styles/Home.scss";
 
 // images //
 
-import graduationImg from "../assets/graduation.png";
 import aottg2eeImg from "../assets/aottg2ee.png";
 
 const Projects: React.FC = () => {
@@ -26,7 +25,7 @@ const Projects: React.FC = () => {
             <ProjectItem
                 header="Image Album Sorter"
                 img_path=""/* {graduationImg} */
-                page_link=""
+                documentation_link=""
                 github_link="https://github.com/ataerena/bitirme"
                 brief="
                     This project was the first solo project I worked on. It was a project I made as my graduation project from Marmara University.
@@ -39,7 +38,7 @@ const Projects: React.FC = () => {
             <ProjectItem
                 header="AoTTG2:EE"
                 img_path={aottg2eeImg}
-                page_link=""
+                documentation_link=""
                 github_link="https://github.com/ZippyStew45/Aottg2-EM"
                 brief="
                     I don't want to extensively delve into this as it is by no means a project made by myself. This is a mod project for an open source Unity 3D game.
@@ -52,7 +51,7 @@ const Projects: React.FC = () => {
             <ProjectItem
                 header="Samurai Game"
                 img_path=""
-                page_link="/projects/samurai-game"
+                documentation_link="/projects/samurai-game"
                 github_link="https://github.com/ataerena/2DSamuraiGame"
                 brief="
                     The purpose of this project was to get more acquainted with Unity by making a small project from scratch. 
@@ -65,7 +64,7 @@ const Projects: React.FC = () => {
             <ProjectItem
                 header="Untitled 2D Game"
                 img_path=""
-                page_link=""
+                documentation_link=""
                 github_link="https://github.com/ataerena/Square_2D"
                 brief="
                     This project is the next step from the 2D Samurai Game. It has no commercial aim and is simply another sandbox to get better at using the Unity Game Engine.

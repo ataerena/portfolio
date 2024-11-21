@@ -2,18 +2,18 @@ import React from "react";
 import "../styles/Home.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 interface IProjectItem {
     header: string;
     img_path: string;
     brief: string;
-    page_link: string;
+    documentation_link: string;
     github_link: string;
 }
 
-const ProjectItem: React.FC<IProjectItem> = ({header, img_path, brief, page_link, github_link}) => {
+const ProjectItem: React.FC<IProjectItem> = ({header, img_path, brief, documentation_link, github_link}) => {
     const img_alt_text = `${header} sample image`; //TODO: add language on 'sample image'
 
     return (
@@ -43,11 +43,11 @@ const ProjectItem: React.FC<IProjectItem> = ({header, img_path, brief, page_link
             </span>
 
             {
-                page_link !== "" ?
-                <Link to={page_link} className="--row-flex-start">
-                    Read more
-                    <FontAwesomeIcon icon={faArrowRight} />
-                </Link>
+                documentation_link !== "" ?
+                <a href="/files/SamuraiGameDocumentation.pdf" download="Samurai_Game_Documentation.pdf" className="--row-flex-start">
+                    <FontAwesomeIcon icon={faFilePdf} />
+                    See an in depth documentation
+                </a>
                 : null
             }
         </div>
