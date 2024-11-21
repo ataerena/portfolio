@@ -71,7 +71,8 @@
     border: thin solid $text-color;
     font-size: 1.3em;
     margin-bottom: 1em;
-
+    background-color: $bg-color;
+    box-shadow: 0 0 2em 1em $bg-hover inset;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -92,7 +93,7 @@
     cursor: pointer;
     &:hover {
         background-color: $bg-hover;
-        box-shadow: 0 0 2em 1em $bg-color inset;
+        box-shadow: 0 0 2em 1em $bg-color-darker inset;
 
         > a {
             color: $text-hover;
@@ -182,6 +183,17 @@
     .route-item {
         padding: 2em;
         font-size: 2vw;
+    }
+
+    .greetings {
+        padding-top: .5em;
+        width: 100%;
+        text-align: center;
+        border-top: 0 !important;
+    
+        > h2 {
+            font-size: 4vw;
+        }
     }
 }
 

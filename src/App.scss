@@ -1,7 +1,8 @@
 // colors //
-$bg-color: #120c09;
-$bg-menu: #1b120d;
-$bg-hover: #2d231f;
+$bg-color: #4b3e80;
+$bg-color-darker: #1a1534;
+$bg-menu: #6352a7;
+$bg-hover: #342e4f;
 
 $text-color: #ffce6b;
 $text-hover: #feebc6;
@@ -15,6 +16,19 @@ $scrollbar-thumb-color-hover: #bc984f;
 // interaction //
 $default-transition-time: 150ms;
 
+// fonts //
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tiny5&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&family=Tiny5&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  font-family: "Lora", serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto Slab", serif !important;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -22,7 +36,7 @@ $default-transition-time: 150ms;
   overflow: hidden;
   
   color: $text-color;
-  background-color: $bg-color;
+  background: radial-gradient(circle at top, $bg-color, transparent), radial-gradient(circle at bottom, $bg-color-darker, $bg-color-darker);
 
   display: flex;
   flex-direction: column;

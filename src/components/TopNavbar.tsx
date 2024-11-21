@@ -50,7 +50,7 @@ const TopNavbar: React.FC = () => {
         <div className="navbar-group --row-flex-start">
             <div className="navbar-item">
                 <a href="https://ataerena.github.io/portfolio/" className="navbar-link">
-                    <FontAwesomeIcon icon={faHouse} />
+                    <FontAwesomeIcon icon={faHouse} style={{transform: "translateY(10%)"}} />
                     {t('navbar.home')}
                 </a>
             </div>
