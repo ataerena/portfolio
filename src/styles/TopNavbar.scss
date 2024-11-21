@@ -95,7 +95,7 @@
 
 .cv-buttons {
     position: absolute;
-    top: 125%;
+    top: 60%;
 
     display: flex;
     flex-direction: row;
@@ -107,8 +107,8 @@
     > a {
         background-color: $scrollbar-thumb-color;
         text-decoration: none;
-        color: $scrollbar-bg-color;
-        font-size: .8em;
+        color: whitesmoke;
+        font-size: .9em;
         font-weight: bold;
 
         box-shadow: 0 .1em 1em .1em $bg-hover;
@@ -121,7 +121,7 @@
         transition: all $default-transition-time;
         &:hover {
             background-color: $scrollbar-thumb-color-hover;
-            color: $bg-color;
+            color: $text-hover;
         }
     }
 }
