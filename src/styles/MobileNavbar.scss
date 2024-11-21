@@ -3,7 +3,7 @@
 .MobileNavbar {
     z-index: 99;
 
-    background-color: $bg-color;
+    background: radial-gradient(circle, $bg-hover, $bg-color-darker);
     height: 7.5%;
     min-height: 7.5% !important;
     width: 100%;
@@ -32,7 +32,7 @@
     top: 0;
     right: 0;
     padding: 1em;
-    background-color: $bg-menu;
+    background-color: $bg-color-darker;
     width: 80vw;
     height: calc(100vh - 1em);
 
@@ -44,7 +44,7 @@
 
     box-shadow: 0 0 1em .1em $bg-hover;
 
-    animation: FadeIn 100ms ease-in 1;
+    animation: MenuFadeIn 100ms ease-in 1;
 
     > .collapse-btn {
         transition: all $default-transition-time;
@@ -87,10 +87,20 @@
     }
 }
 
-@keyframes FadeIn {
+.contact-item {
+    margin-top: .5em;
+}
+
+.contact-item-no-hover {
+    text-decoration: none !important;
+}
+
+@keyframes MenuFadeIn {
     0% {
+        transform: translateX(100%);
         opacity: .2;
     } 100% {
+        transform: translateX(0);
         opacity: .95;
     }
 }

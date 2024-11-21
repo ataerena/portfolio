@@ -3,7 +3,7 @@
 .TopNavbar {
     z-index: 99;
 
-    background: radial-gradient(circle, $bg-color-darker, $bg-color); //radial-gradient(circle at right, $bg-color, transparent), radial-gradient(circle at left, $bg-color-darker, $bg-color-darker);
+    background: radial-gradient(circle, $bg-color-darker, $bg-color);
     height: 7.5%;
     min-height: 7.5% !important;
     width: 100%;

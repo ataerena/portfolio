@@ -83,7 +83,7 @@ const MobileNavbar: React.FC = () => {
 
                     <div className="contact-item --row-flex-start">
                         <div>
-                            <a>
+                            <a className="contact-item-no-hover">
                                 ataerena
                             </a>
                         </div>
