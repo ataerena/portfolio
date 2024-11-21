@@ -56,6 +56,20 @@ const Projects: React.FC = () => {
                 github_link="https://github.com/ataerena/Square_2D"
                 brief={t("projects.project_4.description")}
             />
+
+            <div className="navigation-segment">
+              <div>
+                <h2>
+                  {t('navigation_menu.read_next')}
+                </h2>
+              </div>
+
+              <div className="quick-navigation">
+                <RouteItem name={t('navigation_menu.experience')} to="/work-experience" />
+                <RouteItem name={t('navigation_menu.education')} to="/education" />
+                <RouteItem name={t('navigation_menu.home')} to="/" />
+              </div>
+            </div>
         </div>
     );
 }

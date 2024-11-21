@@ -29,6 +29,8 @@
     }
 
     overflow-y: auto;
+
+    animation: FadeIn 300ms ease-in 1;
 }
 
 .greetings {
@@ -167,5 +169,13 @@
     img {
         max-width: 70% !important;
         margin: auto;
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
     }
 }
