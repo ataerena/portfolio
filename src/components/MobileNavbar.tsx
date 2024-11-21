@@ -49,6 +49,18 @@ const MobileNavbar: React.FC = () => {
                 </div>
 
                 <div className="menu-group">
+                    <h4>
+                        {t('navbar.download_cv')}
+                    </h4>
+                    <a style={{paddingTop: ".5em"}} href="/portfolio/files/Ata_TR.pdf" download="Ozgecmis_AtaErenArslan.pdf" tabIndex={0}>
+                        Türkçe
+                    </a>
+                    <a style={{paddingTop: ".5em"}} href="/portfolio/files/Ata_EN.pdf" download="Resume_AtaErenArslan.pdf" tabIndex={0}>
+                        English
+                    </a>
+                </div>
+
+                <div className="menu-group">
                     
                     <h4>
                         {t('contact.contact&socials')}
