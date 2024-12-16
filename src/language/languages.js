@@ -76,7 +76,7 @@ const languages = {
             },
             "education_2": {
                 "header": "Marmara University, Mechatronics Engineering - Bachelor's",
-                "text": "I've graduated from the university with a GPA of 2.98 in January 2024. During my time in university, I started to have a further growing interest in the area of software rather than traditional mechatronics practices like automation or embedded systems. So, I've spent a total of 144 business days of internship in my last year here and I've worked on web development during the entirety of these training periods in order to reach the end goal of becoming a software developer."        
+                "text": "I've graduated from the university in January 2024. During my time in university, I started to have a further growing interest in the area of software rather than traditional mechatronics practices like automation or embedded systems. So, I've spent a total of 144 business days of internship in my last year here and I've worked on web development during the entirety of these training periods in order to reach the end goal of becoming a software developer."        
             }
         }
     },
@@ -155,7 +155,7 @@ const languages = {
             },
             "education_2": {
                 "header": "Marmara Universitesi, Mekatronik Mühendisliği - Lisans",
-                "text": "Ocak 2024'te 2.98'lik ortalama ile üniversiteden mezun oldum. Üniversite yıllarımda, gömülü sistemler veya otomasyon gibi geleneksel mekatronik pratiklerindense yazılım alanına ilgi duymaya başladım. Dolayısıyla toplam 144 iş günlük stajlarımın tamamını bir yazılım geliştiricisi olmama yardımcı olacak firmalarda yapmaya karar verdim."
+                "text": "Ocak 2024'te üniversiteden mezun oldum. Üniversite yıllarımda, gömülü sistemler veya otomasyon gibi geleneksel mekatronik pratiklerindense yazılım alanına ilgi duymaya başladım. Dolayısıyla toplam 144 iş günlük stajlarımın tamamını bir yazılım geliştiricisi olmama yardımcı olacak firmalarda yapmaya karar verdim."
             }
         }
     }
