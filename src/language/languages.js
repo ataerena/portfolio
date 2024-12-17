@@ -42,7 +42,7 @@ const languages = {
             },
             "project_2": {
                 "header": "AoTTG2:EE",
-                "description": "I don't want to extensively delve into this as it is by no means a project made by myself. This is a mod project for an open source Unity 3D game. The main game, called AoTTG2, is an open source tribute game made by it's successors players. The project was led by a friend of mine and with a small team we aimed to make a mod that created a different game mode. I worked on developing new gameplay features which included their UI development and multiplayer integration using Photon PUN."
+                "description": "I had the opportunity to contribute to a mod project for an open-source Unity 3D game called AoTTG2; a community-driven tribute developed by passionate players. Collaborating with a friend who led the project and a small team, our goal was to create an innovative new game mode. My role focused on developing engaging gameplay features, including the UI for them and integrating multiplayer functionality using Photon PUN. It was a great experience to enhance my skills while working on a collaborative and creative project."
             },
             "project_3": {
                 "header": "Samurai Game",
@@ -121,7 +121,7 @@ const languages = {
             },
             "project_2": {
                 "header": "AoTTG2:EE",
-                "description": "Bu projeyi tek başıma geliştirmediğim için kendisinden bahsederken aşırıya kaçmak pek istemiyorum. Bu proje, açık kaynaklı bir Unity 3D oyununa mod eklemek amacıyla geliştirildi. AoTTG2 isimli ana oyun, çıkan ilk oyunun oyuncuları tarafından geliştirilmiş açık kaynaklı bir oyun. Bizim projemiz ise, bu topluluktan bir arkadaşım tarafından ufak bir ekiple yürütüldü ve birlikte oyuna farklı bir stil getiren bir mod geliştirmeyi hedefledik. Benim görevim yeni oynanış elementleri eklerken aynı zamanda bu elementlerin arayüz ve Photon PUN kullanarak çok oyunculu entegrasyonlarını geliştirmekti."
+                "description": "AoTTG2 isimli, topluluğu tarafından ilerletilen açık kaynaklı bir Unity 3D oyunu üzerine bir mod projesine katkıda bulunma fırsatım oldu. Projeye öncülük eden bir arkadaşım ve ufak bir takım ile birlikte hedefimiz, inovatif bir oyun modu yaratmaktı. Üstlendiğim rol kapsamında yeni oyun mekanikleri ile bu mekaniklere ait arayüz geliştirmelerini ve Photon PUN kullanarak bu yeni özelliklerin multiplayer işlevselliklerinin entegrasyonunu sağlamak gibi sorumluluklarım oldu. İşbirliğine dayalı bu yaratıcı projeye katkıda bulunarak becerilerimi geliştirmek harika bir deneyimdi."
             },
             "project_3": {
                 "header": "Samurai Game",
